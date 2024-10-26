@@ -37,8 +37,8 @@ To set up this project locally, you’ll need:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Prem-Kumar-Dev/ABCD-Project.git
-cd ABCD-Project
+git clone https://github.com/Abhijeet-sah/Online-Banking
+cd Online-Banking
 ```
 
 ### 2. Configure the Database [In Progress]
@@ -77,7 +77,7 @@ Open your browser and go to `http://localhost:8080` to access the Online Banking
 ## Project Structure
 
 ```
-ABCD-Project/
+Online-Banking/
 ├── src/
 │   ├── main/
 │   │   ├── java/

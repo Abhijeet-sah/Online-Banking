@@ -78,17 +78,26 @@ Open your browser and go to `http://localhost:8080` to access the Online Banking
 ## Project Structure
 
 ```
-Online-Banking/
+ABCD-Project/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/example/banking/  # Java classes for controllers, services, and JDBC operations
+│   │   │   └── com/example/banking/
+│   │   │       ├── dao/               # Data Access Objects for JDBC
+│   │   │       ├── model/             # POJOs for database entities
+│   │   │       ├── servlets/          # Servlets for request handling
+│   │   │       └── utils/             # JDBC connection utility
 │   │   ├── resources/
-│   │   │   ├── templates/            # HTML templates
-│   │   │   └── static/               # CSS, JS, and images
-│   └── test/                         # Unit and integration tests
-├── pom.xml                           # Maven configuration file
-└── README.md
+│   │   │   └── db.properties          # Database configuration
+│   │   ├── webapp/
+│   │   │   ├── WEB-INF/
+│   │   │   │   ├── web.xml            # Deployment descriptor
+│   │   │   ├── index.jsp              # Entry point
+│   │   │   ├── static/                # CSS, JavaScript, images
+│   ├── test/                          # Unit tests
+├── pom.xml                             # Maven dependencies and build config
+└── README.md                           # Project documentation
+
 ```
 
 ## Usage
